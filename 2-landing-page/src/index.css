@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+@layer components {
+  li {
+    @apply cursor-pointer;
+    @apply hover:text-blue-500 duration-300;
+  }
+}
