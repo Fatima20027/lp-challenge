@@ -3,6 +3,7 @@ import Navbar from "./Componenets/Navbar";
 import Hero from "./Componenets/Hero";
 import About from "./Componenets/About";
 import Features from "./Componenets/Features";
+import Courses from "./Componenets/Courses";
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const App = () => {
         </div>
       <About/>
       <Features/>
+      <Courses/>
 
       
 

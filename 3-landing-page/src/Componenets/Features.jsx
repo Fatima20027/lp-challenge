@@ -59,7 +59,7 @@ const Features = () => {
     },
   ]
   return (
-    <div className=" flex flex-col justify-center items-center mt-10 text-slate-900">
+    <div className=" flex flex-col  justify-center items-center mt-10 text-slate-900">
       <div className=" flex gap-8">
         <div className="h-2 w-2 bg-orange-300 p-4 rounded-full">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-8 relative bottom-4">
@@ -72,13 +72,13 @@ const Features = () => {
         
       </div>
 
-      <div>
+      <div className="grid md:grid-cols-3 justify-center max-w-5xl w-full gap-2 py-8">
         {arr.map((item) =>(
-          <div key={item.id} className="">
-            <div className="bg-orange-50 mt-1">
+          <div key={item.id} className="px-4 md:px-0">
+            <div className="bg-orange-50 mt-1 py-5 px-2.5 space-y-4 transform transition scale-98 hover:scale-100  duration-300">
               <div >{item.icon}</div>
-              <div>{item.title}</div>
-              <div>{item.description}</div>
+              <div className="text-2xl md:text-xl font-extrabold ">{item.title}</div>
+              <div className="text-gray-600 md:text-sm">{item.description}</div>
 
             </div>
             
