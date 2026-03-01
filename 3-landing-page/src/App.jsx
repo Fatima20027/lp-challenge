@@ -4,6 +4,7 @@ import Hero from "./Componenets/Hero";
 import About from "./Componenets/About";
 import Features from "./Componenets/Features";
 import Courses from "./Componenets/Courses";
+import Testimonial from "./Componenets/Testimonial";
 
 const App = () => {
   return (
@@ -32,6 +33,7 @@ const App = () => {
       <About/>
       <Features/>
       <Courses/>
+      <Testimonial/>
 
       
 
