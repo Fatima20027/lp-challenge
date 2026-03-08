@@ -5,6 +5,7 @@ import About from "./Componenets/About";
 import Features from "./Componenets/Features";
 import Courses from "./Componenets/Courses";
 import Testimonial from "./Componenets/Testimonial";
+import Test from "./Componenets/Test";
 
 const App = () => {
   return (
@@ -17,10 +18,11 @@ const App = () => {
 
         {/* Overlay */}
         <div className="absolute inset-0 bg-yellow-300/20"></div>
+        <Navbar />
 
         {/* Content */}
         <div className="">
-          <Navbar />
+          
           <div className="h-screen">
             <Hero />
 
@@ -34,6 +36,7 @@ const App = () => {
       <Features/>
       <Courses/>
       <Testimonial/>
+      <Test/>
 
       
 

@@ -100,8 +100,8 @@ const Courses = () => {
     },
   ]
 
-  const [isMore, setIsMore] = useState(false);
-  const visibleCourses = isMore ? courseData : courseData.slice(0, 6);
+  const [isLess, setIsLess] = useState(false);
+  const visibleCourses = isLess ? courseData : courseData.slice(0, 6);
   
   
   return (
@@ -118,7 +118,7 @@ const Courses = () => {
         
       </div>
 
-      <div className="grid md:grid-cols-3 justify-center max-w-5xl w-full gap-4 py-8" 
+      <div className="grid md:grid-cols-3 justify-center max-w-5xl w-full gap-4 py-7" 
        
       >
         
@@ -159,9 +159,9 @@ const Courses = () => {
         ))}
       </div>
 
-      <button onClick={() => setIsMore(!isMore)} className="text-purple-950 cursor-pointer relative right-5 md:right-20 self-end flex gap-1">
+      <button onClick={() => setIsLess(!isLess)} className="text-purple-950 cursor-pointer relative right-5 md:right-40 self-end flex gap-1 underline ">
 
-        {isMore ? "See Less" : "See More"}
+        {isLess ? "See Less" : "See More"}
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-7">
           <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
         </svg>
@@ -171,7 +171,7 @@ const Courses = () => {
       
       
 
-      <button class=" text-sm group relative inline-flex px-4 py-2 items-center justify-center overflow-hidden rounded-full bg-slate-900   text-neutral-200 font-bold cursor-pointer  hover:brightness-95 shadow-md shadow-orange-400/30">
+      <button class=" text-sm group relative inline-flex px-4 py-2 items-center justify-center overflow-hidden rounded-full bg-slate-900   text-neutral-200 font-bold cursor-pointer  hover:brightness-95 shadow-md shadow-orange-400/30 translate-y-2">
       <span>Let's Chat for More!</span>
       <div class="ml-1 transition group-hover:translate-x-1 ">
         <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg></div></button>
